@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="47" started-at="2018-09-09T06:38:19Z" finished-at="2018-09-09T06:38:19Z">
+  <suite name="Suite" duration-ms="213" started-at="2018-09-09T09:11:35Z" finished-at="2018-09-09T09:11:35Z">
     <groups>
     </groups>
-    <test name="Test01" duration-ms="47" started-at="2018-09-09T06:38:19Z" finished-at="2018-09-09T06:38:19Z">
+    <test name="Test01" duration-ms="213" started-at="2018-09-09T09:11:35Z" finished-at="2018-09-09T09:11:35Z">
       <class name="com.accenture.tests.MyTest">
-        <test-method status="FAIL" signature="RegTEST()[pri:0, instance:com.accenture.tests.MyTest@51e2adc7]" name="RegTEST" duration-ms="15" started-at="2018-09-09T06:38:19Z" finished-at="2018-09-09T06:38:19Z">
+        <test-method status="FAIL" signature="RegTEST()[pri:0, instance:com.accenture.tests.MyTest@7a9273a8]" name="RegTEST" duration-ms="32" started-at="2018-09-09T09:11:35Z" finished-at="2018-09-09T09:11:35Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -52,7 +52,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegTEST -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.accenture.tests.MyTest@51e2adc7]" name="loginTest" duration-ms="0" started-at="2018-09-09T06:38:19Z" finished-at="2018-09-09T06:38:19Z">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.accenture.tests.MyTest@7a9273a8]" name="loginTest" duration-ms="0" started-at="2018-09-09T09:11:35Z" finished-at="2018-09-09T09:11:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->

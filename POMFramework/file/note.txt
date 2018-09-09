@@ -5,21 +5,18 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class MyListeners implements ITestListener{  //ITestListener is inbuilt interface
 ExtentReports e;
-ExtentTest t;
 	
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
-		t = e.startTest(result.getMethod().getMethodName(), "has started");
+		System.out.println("On Test start");
 	}
 
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
-		t.log(LogStatus.PASS, result.getMethod().getMethodName()+"  has passed");
+		System.out.println("On Test Pass");
 	}
 
 	public void onTestFailure(ITestResult result) {
@@ -40,14 +37,36 @@ ExtentTest t;
 
 	public void onStart(ITestContext context) {
 		// TODO Auto-generated method stub
-		e = new ExtentReports("C:\\shibika\\gitrepos\\POMFramework\\test-output\\myreport.html");
+		System.out.println("On TestNG start");
 	}
 
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
-		
-		e.endTest(t);
-		e.flush();
+		System.out.println("On TestNG finish");
 	}
 
 }
+=====================
+
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>2.2.4</version>
+</dependency>
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>2.2.4</version>
+</dependency>
+---------
+
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>2.2.4</version>
+</dependency>
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>2.2.4</version>
+</dependency>
